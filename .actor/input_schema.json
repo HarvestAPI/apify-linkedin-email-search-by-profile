@@ -1,0 +1,209 @@
+{
+  "title": "Scrape LinkedIn Profile details",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "profiles": {
+      "title": "Profiles JSON",
+      "type": "array",
+      "editor": "json",
+      "prefill": [
+        {
+          "id": "ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ",
+          "publicIdentifier": "satyanadella",
+          "linkedinUrl": "https://www.linkedin.com/in/satyanadella",
+          "firstName": "Satya",
+          "lastName": "Nadella",
+          "headline": "Chairman and CEO at Microsoft",
+          "about": "As chairman and CEO of Microsoft, I define my mission and that of my company as empowering every person and every organization on the planet to achieve more.",
+          "openToWork": false,
+          "hiring": false,
+          "photo": "https://media.licdn.com/dms/image/v2/C5603AQHHUuOSlRVA1w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1579726625483?e=1756339200&v=beta&t=bbdTNEewTrJRj4PRAwORiO25y6kP7_wC4FtmrfJhnPE",
+          "premium": true,
+          "influencer": true,
+          "location": {
+            "linkedinText": "Redmond, Washington, United States",
+            "countryCode": "US",
+            "parsed": {
+              "text": "Redmond, WA, United States",
+              "countryCode": "US",
+              "regionCode": null,
+              "country": "United States",
+              "countryFull": "United States of America",
+              "state": "Washington",
+              "city": "Redmond"
+            }
+          },
+          "verified": true,
+          "registeredAt": "2007-12-14T20:35:02.000Z",
+          "topSkills": null,
+          "connectionsCount": 823,
+          "followerCount": 11470644,
+          "currentPosition": [
+            {
+              "companyName": "Microsoft"
+            }
+          ],
+          "experience": [
+            {
+              "position": "Chairman and CEO",
+              "location": "Greater Seattle Area",
+              "employmentType": null,
+              "workplaceType": null,
+              "companyName": "Microsoft",
+              "companyLinkedinUrl": "https://www.linkedin.com/company/microsoft/",
+              "companyId": "1035",
+              "companyUniversalName": "microsoft",
+              "duration": "11 yrs 6 mos",
+              "description": null,
+              "skills": null,
+              "startDate": {
+                "month": "Feb",
+                "year": 2014,
+                "text": "Feb 2014"
+              },
+              "endDate": {
+                "text": "Present"
+              }
+            },
+            {
+              "position": "Member Board Of Trustees",
+              "location": null,
+              "employmentType": null,
+              "workplaceType": null,
+              "companyName": "University of Chicago",
+              "companyLinkedinUrl": "https://www.linkedin.com/company/3881/",
+              "companyId": "3881",
+              "duration": "7 yrs 7 mos",
+              "description": null,
+              "skills": null,
+              "startDate": {
+                "year": 2018,
+                "text": "2018"
+              },
+              "endDate": {
+                "text": "Present"
+              }
+            },
+            {
+              "position": "Board Member",
+              "location": null,
+              "employmentType": null,
+              "workplaceType": null,
+              "companyName": "Starbucks",
+              "companyLinkedinUrl": "https://www.linkedin.com/company/2271/",
+              "companyId": "2271",
+              "duration": "7 yrs",
+              "description": null,
+              "skills": null,
+              "startDate": {
+                "year": 2017,
+                "text": "2017"
+              },
+              "endDate": {
+                "year": 2024,
+                "text": "2024"
+              }
+            },
+            {
+              "position": "Chairman",
+              "location": null,
+              "employmentType": null,
+              "workplaceType": null,
+              "companyName": "The Business Council U.S.",
+              "companyLinkedinUrl": "https://www.linkedin.com/company/5301945/",
+              "companyId": "5301945",
+              "duration": "2 yrs",
+              "description": null,
+              "skills": null,
+              "startDate": {
+                "year": 2021,
+                "text": "2021"
+              },
+              "endDate": {
+                "year": 2023,
+                "text": "2023"
+              }
+            },
+            {
+              "position": "Board Member",
+              "location": null,
+              "employmentType": null,
+              "workplaceType": null,
+              "companyName": "Fred Hutch",
+              "companyLinkedinUrl": "https://www.linkedin.com/company/7158/",
+              "companyId": "7158",
+              "duration": "6 yrs",
+              "description": null,
+              "skills": null,
+              "startDate": {
+                "year": 2016,
+                "text": "2016"
+              },
+              "endDate": {
+                "year": 2022,
+                "text": "2022"
+              }
+            }
+          ],
+          "education": [
+            {
+              "schoolName": "The University of Chicago Booth School of Business",
+              "schoolLinkedinUrl": "https://www.linkedin.com/company/8398/",
+              "degree": null,
+              "fieldOfStudy": null,
+              "skills": [],
+              "startDate": {
+                "year": 1994,
+                "text": "1994"
+              },
+              "endDate": {
+                "year": 1996,
+                "text": "1996"
+              },
+              "period": "1994 - 1996"
+            },
+            {
+              "schoolName": "Manipal Institute of Technology",
+              "schoolLinkedinUrl": "https://www.linkedin.com/company/577550/",
+              "degree": "Bachelor’s Degree",
+              "fieldOfStudy": "Electrical Engineering",
+              "skills": [],
+              "startDate": null,
+              "endDate": {
+                "text": ""
+              }
+            },
+            {
+              "schoolName": "University of Wisconsin-Milwaukee",
+              "schoolLinkedinUrl": "https://www.linkedin.com/company/166690/",
+              "degree": "Master’s Degree",
+              "fieldOfStudy": "Computer Science",
+              "skills": [],
+              "startDate": null,
+              "endDate": {
+                "text": ""
+              }
+            }
+          ],
+          "certifications": [],
+          "projects": [],
+          "volunteering": [],
+          "receivedRecommendations": [],
+          "skills": [],
+          "publications": [],
+          "courses": [],
+          "patents": [],
+          "honorsAndAwards": [],
+          "languages": [],
+          "featured": {
+            "images": [
+              "https://media.licdn.com/dms/image/v2/D5605AQH-IjytwXHG5w/videocover-high/B56ZX_ecF3GUBs-/0/1743748014799?e=1754179200&v=beta&t=K8_0Evb8Uqcu7HX3KZZixAW1pbWxQPcn950Yz5veqPw"
+            ],
+            "link": "https://www.linkedin.com/feed/update/urn:li:activity:7313809366011256832?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7313809366011256832%29"
+          }
+        }
+      ]
+    }
+  }
+}
