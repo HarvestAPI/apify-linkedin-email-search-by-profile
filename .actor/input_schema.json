@@ -7,6 +7,7 @@
       "title": "Profiles JSON",
       "type": "array",
       "editor": "json",
+      "description": "Provide the JSON output of our LinkedIn Profile Bulk Scraper under `profiles` key in the input to find emails of the profiles.",
       "prefill": [
         {
           "id": "ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ",
