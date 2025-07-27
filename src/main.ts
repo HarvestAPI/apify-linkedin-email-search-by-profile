@@ -3,6 +3,7 @@ import { createLinkedinScraper, type Profile } from '@harvestapi/scraper';
 import { Actor } from 'apify';
 import { config } from 'dotenv';
 import { createConcurrentQueues } from './utils/queue.js';
+import { pick } from './utils/mics.js';
 
 config();
 
@@ -51,8 +52,13 @@ const addJob = createConcurrentQueues(6, async ({ profile }: { profile: Profile 
       id: profile.id,
       linkedinUrl: profile.linkedinUrl,
       ...result.element,
+      ...pick(profile, ['id', 'linkedinUrl']).rest,
     };
-    await Actor.pushData(item);
+    if (result.element?.companyWebsites?.length) {
+      await Actor.pushData(item, 'email-search');
+    } else {
+      await Actor.pushData(item, 'no-data');
+    }
   }
 });
 

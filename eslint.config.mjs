@@ -28,6 +28,7 @@ export default [
       '@typescript-eslint/no-explicit-any': 'off',
       'simple-import-sort/imports': 'off',
       'import/no-extraneous-dependencies': 'off',
+      'no-restricted-syntax': 'off',
     },
   },
 ];
