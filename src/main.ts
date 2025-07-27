@@ -44,21 +44,33 @@ const addJob = createConcurrentQueues(6, async ({ profile }: { profile: Profile 
     return;
   }
 
-  const result = await scraper.searchProfileEmail({
-    profile,
-  });
-  if (result.element) {
-    const item = {
-      id: profile.id,
-      linkedinUrl: profile.linkedinUrl,
-      ...result.element,
-      ...pick(profile, ['id', 'linkedinUrl']).rest,
-    };
-    if ((result.element as any)?.companyWebsites?.length) {
-      await Actor.pushData(item, 'email-search');
-    } else {
-      await Actor.pushData(item, 'no-data');
+  try {
+    const result = await scraper.searchProfileEmail({
+      profile,
+    });
+    if (result.element) {
+      const item = {
+        id: profile.id,
+        linkedinUrl: profile.linkedinUrl,
+        ...result.element,
+        ...pick(profile, ['id', 'linkedinUrl']).rest,
+      };
+      if ((result.element as any)?.companyWebsites?.length) {
+        await Actor.pushData(item, 'email-search');
+      } else {
+        await Actor.pushData(item, 'no-data');
+      }
     }
+  } catch (error) {
+    console.error(`Error processing profile ${profile.id}:`, error);
+    await Actor.pushData(
+      {
+        id: profile.id,
+        linkedinUrl: profile.linkedinUrl,
+        error: error instanceof Error ? error.message : String(error),
+      },
+      'no-data',
+    );
   }
 });
 
