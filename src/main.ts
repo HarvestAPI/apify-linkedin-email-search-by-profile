@@ -54,7 +54,7 @@ const addJob = createConcurrentQueues(6, async ({ profile }: { profile: Profile 
       ...result.element,
       ...pick(profile, ['id', 'linkedinUrl']).rest,
     };
-    if (result.element?.companyWebsites?.length) {
+    if ((result.element as any)?.companyWebsites?.length) {
       await Actor.pushData(item, 'email-search');
     } else {
       await Actor.pushData(item, 'no-data');
