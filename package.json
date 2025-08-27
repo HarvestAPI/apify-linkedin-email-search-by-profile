@@ -7,9 +7,8 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@harvestapi/scraper": "1.4.9",
+    "@harvestapi/scraper":  "1.4.16",
     "apify": "^3.4.2",
-    "crawlee": "^3.13.8",
     "dotenv": "^17.2.1"
   },
   "devDependencies": {
