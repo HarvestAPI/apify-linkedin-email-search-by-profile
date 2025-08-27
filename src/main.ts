@@ -43,6 +43,7 @@ const addJob = createConcurrentQueues(6, async ({ profile }: { profile: Profile 
     console.warn(`Profile ${profile?.id} has no LinkedIn URL, skipping...`);
     return;
   }
+  
 
   try {
     const result = await scraper.searchProfileEmail({
