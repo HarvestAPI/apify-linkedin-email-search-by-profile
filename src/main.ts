@@ -20,8 +20,10 @@ if (!input) throw new Error('Input is missing!');
 const { actorId, actorRunId, actorBuildId, userId, memoryMbytes } = Actor.getEnv();
 const { actorMaxPaidDatasetItems } = Actor.getEnv();
 
+console.log(`userId`, userId);
 const client = Actor.newClient();
 const user = userId ? await client.user(userId).get() : null;
+console.log(`user`, user);
 
 const scraper = createLinkedinScraper({
   apiKey: process.env.HARVESTAPI_TOKEN!,
