@@ -20,6 +20,7 @@ if (!input) throw new Error('Input is missing!');
 const { actorId, actorRunId, actorBuildId, userId, memoryMbytes } = Actor.getEnv();
 const { actorMaxPaidDatasetItems } = Actor.getEnv();
 
+console.log(`Actor.getEnv()`, Actor.getEnv());
 console.log(`userId`, userId);
 const client = Actor.newClient();
 const user = userId ? await client.user(userId).get() : null;
